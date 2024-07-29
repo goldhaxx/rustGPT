@@ -1,0 +1,13 @@
+{
+    "name": "Rust Codespace",
+    "image": "mcr.microsoft.com/vscode/devcontainers/base:ubuntu",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "rust-lang.rust",
+                "matklad.rust-analyzer"
+            ]
+        }
+    },
+    "postCreateCommand": "curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y && source $HOME/.cargo/env"
+}
